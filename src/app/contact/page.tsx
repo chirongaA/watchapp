@@ -35,7 +35,7 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-platinum-900 py-12">
+    <div className="min-h-screen bg-[#d9d9d9] py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
@@ -49,7 +49,7 @@ const ContactPage: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <div className="bg-white rounded-lg shadow-lg p-8">
+          <div className="bg-[#ffffff] rounded-lg shadow-lg p-8">
             <h2 className="font-cormorant text-3xl font-bold text-jet-500 mb-8">
               Get in Touch
             </h2>
@@ -57,7 +57,7 @@ const ContactPage: React.FC = () => {
             <div className="space-y-6">
               {/* Email */}
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-caribbean_current-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-[#db6969] rounded-full flex items-center justify-center flex-shrink-0">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -75,7 +75,7 @@ const ContactPage: React.FC = () => {
 
               {/* Phone */}
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-caribbean_current-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-[#3c6e71] rounded-full flex items-center justify-center flex-shrink-0">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -83,17 +83,17 @@ const ContactPage: React.FC = () => {
                     Phone
                   </h3>
                   <p className="font-open-sans text-jet-600">
-                    +1 (555) 123-4567
+                    +254 711 1234567
                   </p>
                   <p className="font-open-sans text-jet-600">
-                    +1 (555) 987-6543
+                    +254 722 9876543
                   </p>
                 </div>
               </div>
 
               {/* Address */}
               <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-caribbean_current-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-[#A1BE95] rounded-full flex items-center justify-center flex-shrink-0">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
@@ -103,8 +103,8 @@ const ContactPage: React.FC = () => {
                   <p className="font-open-sans text-jet-600">
                     123 Luxury Avenue<br />
                     Diamond District<br />
-                    New York, NY 10017<br />
-                    United States
+                    Nairobi, 7990-00200<br />
+                    Kenya
                   </p>
                 </div>
               </div>
@@ -122,11 +122,11 @@ const ContactPage: React.FC = () => {
                 </div>
                 <div className="flex justify-between">
                   <span>Saturday:</span>
-                  <span>10:00 AM - 6:00 PM</span>
+                  <span>10:00 AM - 4:00 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sunday:</span>
-                  <span>12:00 PM - 5:00 PM</span>
+                  <span>Closed</span>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ const ContactPage: React.FC = () => {
 
           {/* Feedback Form */}
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="font-cormorant text-3xl font-bold text-jet-500 mb-8">
+            <h2 className="font-cormorant text-3xl font-bold text-shadow-black mb-8">
               Send us a Message
             </h2>
 
@@ -188,7 +188,7 @@ const ContactPage: React.FC = () => {
 
                 {/* Feedback */}
                 <div>
-                  <label htmlFor="feedback" className="block font-cormorant text-lg font-semibold text-jet-500 mb-2">
+                  <label htmlFor="feedback" className="block font-cormorant text-lg font-semibold text-black mb-2">
                     Message *
                   </label>
                   <textarea
@@ -206,7 +206,7 @@ const ContactPage: React.FC = () => {
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-caribbean_current-500 hover:bg-caribbean_current-600 text-white font-cormorant text-lg font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
+                  className="w-full bg-[#3c6e71] hover:bg-[#000000] text-white font-cormorant text-lg font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center space-x-2"
                 >
                   <Send className="h-5 w-5" />
                   <span>Send Message</span>
@@ -217,17 +217,17 @@ const ContactPage: React.FC = () => {
         </div>
 
         {/* Additional Information */}
-        <div className="mt-16 bg-white rounded-lg shadow-lg p-8 text-center">
+        <div className="mt-16 bg-[#1b8151] rounded-lg shadow-lg p-8 text-center">
           <h2 className="font-cormorant text-3xl font-bold text-jet-500 mb-6">
             Visit Our Showroom
           </h2>
-          <p className="font-open-sans text-lg text-jet-600 max-w-3xl mx-auto mb-8">
-            Experience our luxury timepieces in person at our flagship showroom in the heart of New York&apos;s Diamond District. Our expert consultants are available to help you find the perfect watch for any occasion.
+          <p className="font-open-sans text-lg text-jet-600 max-w-3xl mx-auto mb-2">
+            Experience our luxury timepieces in person at our flagship showroom in the heart of Nairobi. Our expert consultants are available to help you find the perfect watch for any occasion.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-indigo_dye-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl">🏆</span>
+                <span className="text-white text-2xl"></span>
               </div>
               <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                 Expert Consultation
@@ -238,7 +238,7 @@ const ContactPage: React.FC = () => {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-indigo_dye-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl">🔧</span>
+                <span className="text-white text-2xl"></span>
               </div>
               <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                 Repair Services
@@ -249,7 +249,7 @@ const ContactPage: React.FC = () => {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-indigo_dye-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl">✨</span>
+                <span className="text-white text-2xl"></span>
               </div>
               <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                 Custom Orders
