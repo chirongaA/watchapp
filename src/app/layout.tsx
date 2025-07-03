@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-['#d9d9d9']-900 min-h-screen">
+      <body className="bg-[#d9d9d9]-900 min-h-screen">
         <CartProvider>
           <Navbar />
           <main className="flex-1">

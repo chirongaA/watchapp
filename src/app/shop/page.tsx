@@ -5,14 +5,14 @@ import { watches } from '@/data/watches';
 
 const ShopPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-platinum-900 py-12">
+    <div className="min-h-screen bg-[#454b4b] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="font-cormorant text-5xl font-bold text-jet-500 mb-4">
+          <h1 className="font-cormorant text-5xl font-bold text-white mb-4">
             Our Collection
           </h1>
-          <p className="font-open-sans text-xl text-jet-600 max-w-2xl mx-auto">
+          <p className="font-open-sans text-xl text-white max-w-2xl mx-auto">
             Explore our curated selection of luxury timepieces, each piece representing the pinnacle of craftsmanship and design.
           </p>
         </div>
@@ -26,14 +26,13 @@ const ShopPage: React.FC = () => {
 
         {/* Additional Info */}
         <div className="mt-16 text-center">
-          <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+          <div className="bg-[#d0f0de] rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
             <h2 className="font-cormorant text-3xl font-bold text-jet-500 mb-4">
               Why Choose Di VITTORIO & Elena?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
               <div className="text-center">
-                <div className="w-16 h-16 bg-caribbean_current-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-2xl">⚡</span>
+                <div className="w-4 h-4 bg-caribbean_current-500 rounded-full flex items-center justify-center mx-auto">
                 </div>
                 <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                   Premium Quality
@@ -43,8 +42,7 @@ const ShopPage: React.FC = () => {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-caribbean_current-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-2xl">🎯</span>
+                <div className="w-4 h-4 bg-caribbean_current-500 rounded-full flex items-center justify-center mx-auto">
                 </div>
                 <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                   Expert Curation
@@ -54,8 +52,7 @@ const ShopPage: React.FC = () => {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-caribbean_current-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-2xl">💎</span>
+                <div className="w-4 h-4 bg-caribbean_current-500 rounded-full flex items-center justify-center mx-auto">
                 </div>
                 <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                   Timeless Elegance

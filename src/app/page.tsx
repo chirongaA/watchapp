@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import video from 'next/image';
 
 const HomePage: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ const HomePage: React.FC = () => {
           <source src="/images/vid_1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 bg-background/20 backdrop-md" />
+        <div className="absolute inset-0 bg-background/20 backdrop-md"/> 
       </div>
 
       {/* Content */}
@@ -36,12 +37,12 @@ const HomePage: React.FC = () => {
             Discover timeless elegance and luxury craftsmanship in
           </p>
            <p className="font-open-sans text-xl md:text-2xl text-white mb-16 max-w-5xl leading-relaxed drop-shadow-lg">
-            our exclusive collection of premium watches and jewelry.
+            our exclusive collection of premium watches.
           </p>
 
           <Link
             href="/shop"
-            className="inline-block bg-[#ffffff] hover:bg-[#0b5633] text-black font-cormorant text-xl font-semibold px-12 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl"
+            className="inline-block bg-[#c3e3e3] hover:bg-[#0b5633] text-black font-cormorant text-xl font-semibold px-12 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl"
           >
             VISIT OUR COLLECTION
           </Link>

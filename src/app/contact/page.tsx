@@ -35,14 +35,14 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#d9d9d9] py-12">
+    <div className="min-h-screen bg-[#0b472b] py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="font-cormorant text-5xl font-bold text-jet-500 mb-4">
+          <h1 className="font-cormorant text-5xl font-bold text-white mb-4">
             Contact Us
           </h1>
-          <p className="font-open-sans text-xl text-jet-600 max-w-2xl mx-auto">
+          <p className="font-open-sans text-xl text-white max-w-2xl mx-auto">
             We&apos;d love to hear from you. Get in touch with us for any inquiries about our luxury timepieces.
           </p>
         </div>
@@ -56,7 +56,7 @@ const ContactPage: React.FC = () => {
             
             <div className="space-y-6">
               {/* Email */}
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-10">
                 <div className="w-12 h-12 bg-[#db6969] rounded-full flex items-center justify-center flex-shrink-0">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
@@ -74,7 +74,7 @@ const ContactPage: React.FC = () => {
               </div>
 
               {/* Phone */}
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-10">
                 <div className="w-12 h-12 bg-[#3c6e71] rounded-full flex items-center justify-center flex-shrink-0">
                   <Phone className="h-6 w-6 text-white" />
                 </div>
@@ -92,7 +92,7 @@ const ContactPage: React.FC = () => {
               </div>
 
               {/* Address */}
-              <div className="flex items-start space-x-4">
+              <div className="flex items-start space-x-10">
                 <div className="w-12 h-12 bg-[#A1BE95] rounded-full flex items-center justify-center flex-shrink-0">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
@@ -111,7 +111,7 @@ const ContactPage: React.FC = () => {
             </div>
 
             {/* Business Hours */}
-            <div className="mt-8 p-6 bg-platinum-100 rounded-lg">
+            <div className="mt-0 p-6 bg-platinum-100 rounded-lg">
               <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-4">
                 Business Hours
               </h3>
@@ -217,18 +217,15 @@ const ContactPage: React.FC = () => {
         </div>
 
         {/* Additional Information */}
-        <div className="mt-16 bg-[#1b8151] rounded-lg shadow-lg p-8 text-center">
-          <h2 className="font-cormorant text-3xl font-bold text-jet-500 mb-6">
+        <div className="mt-16 text-center">
+          <h2 className="font-cormorant text-3xl font-bold text-white mb-6">
             Visit Our Showroom
           </h2>
-          <p className="font-open-sans text-lg text-jet-600 max-w-3xl mx-auto mb-2">
-            Experience our luxury timepieces in person at our flagship showroom in the heart of Nairobi. Our expert consultants are available to help you find the perfect watch for any occasion.
+          <p className="font-open-sans text-lg text-white max-w-3xl mx-auto mb-8">
+            Experience our luxury timepieces in person at our flagship showroom in the heart of Nairobi. Our expert consultants are available to help you find the perfect watch for any occasion!
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-indigo_dye-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl"></span>
-              </div>
+            <div className="bg-[#bbe2d0] rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate-float">
               <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                 Expert Consultation
               </h3>
@@ -236,10 +233,7 @@ const ContactPage: React.FC = () => {
                 Personalized service from certified watch specialists.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-indigo_dye-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl"></span>
-              </div>
+            <div className="bg-[#bbe2d0] rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate-float delay-100">
               <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                 Repair Services
               </h3>
@@ -247,10 +241,7 @@ const ContactPage: React.FC = () => {
                 Professional maintenance and repair for all luxury brands.
               </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-indigo_dye-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-2xl"></span>
-              </div>
+            <div className="bg-[#bbe2d0] rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate-float delay-200">
               <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                 Custom Orders
               </h3>
