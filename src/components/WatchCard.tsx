@@ -62,7 +62,7 @@ const WatchCard: React.FC<WatchCardProps> = ({ watch }) => {
           
           <button
             onClick={handleAddToCart}
-            className="bg-caribbean_current-500 hover:bg-caribbean_current-600 text-black px-4 py-2 rounded-lg transition-colors duration-200 flex items-center space-x-2"
+            className="bg-[#3c6e71] hover:bg-black text-white px-4 py-2 rounded-lg transition-colors duration-200 flex items-center space-x-2"
           >
             <ShoppingCart className="h-4 w-4" />
             <span className="font-medium">Add to Cart</span>

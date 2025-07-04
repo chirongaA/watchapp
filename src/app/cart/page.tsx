@@ -11,13 +11,13 @@ const CartPage: React.FC = () => {
 
   if (cartItems.length === 0) {
     return (
-      <div className="min-h-screen bg-platinum-900 py-12">
+      <div className="min-h-screen bg-[#0b472b] py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="font-cormorant text-4xl font-bold text-jet-500 mb-8">
+            <h1 className="font-cormorant text-4xl font-bold text-white mb-8">
               Your Cart
             </h1>
-            <div className="bg-white rounded-lg shadow-lg p-12">
+            <div className="bg-[#75857e] rounded-lg shadow-lg p-12">
               <div className="text-center">
                 <div className="w-24 h-24 bg-platinum-300 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-4xl">🛒</span>
@@ -30,7 +30,7 @@ const CartPage: React.FC = () => {
                 </p>
                 <a
                   href="/shop"
-                  className="inline-block bg-caribbean_current-500 hover:bg-caribbean_current-600 text-white font-cormorant text-lg font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
+                  className="inline-block bg-[#3c6e71] hover:bg-black text-white font-cormorant text-lg font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
                 >
                   Continue Shopping
                 </a>
@@ -43,7 +43,7 @@ const CartPage: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-platinum-900 py-12">
+    <div className="min-h-screen bg-[#d8d9d9] py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center mb-8">
           <h1 className="font-cormorant text-4xl font-bold text-jet-500">
@@ -51,7 +51,7 @@ const CartPage: React.FC = () => {
           </h1>
           <button
             onClick={clearCart}
-            className="text-red-500 hover:text-red-700 font-open-sans font-medium transition-colors duration-200"
+            className="text-red-500 text-2xl font-bold hover:text-red-700 font-open-sans transition-colors duration-200"
           >
             Clear Cart
           </button>
@@ -149,13 +149,13 @@ const CartPage: React.FC = () => {
                   </span>
                 </div>
 
-                <button className="w-full bg-caribbean_current-500 hover:bg-caribbean_current-600 text-white font-cormorant text-lg font-semibold py-3 rounded-lg transition-colors duration-200 mb-3">
+                <button className="w-full  bg-[#3c7148] hover:bg-[#79da76] text-white font-cormorant text-lg font-semibold py-3 rounded-lg transition-colors duration-200 mb-3">
                   Proceed to Checkout
                 </button>
                 
                 <a
                   href="/shop"
-                  className="block w-full text-center border border-caribbean_current-500 text-caribbean_current-500 hover:bg-caribbean_current-50 font-cormorant text-lg font-semibold py-3 rounded-lg transition-colors duration-200"
+                  className="block w-full text-center  bg-[#d96d2f] border border-black text-black hover:bg-[#3c6e71] font-cormorant text-lg font-semibold py-3 rounded-lg transition-colors duration-200"
                 >
                   Continue Shopping
                 </a>
