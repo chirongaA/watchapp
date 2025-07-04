@@ -1,4 +1,3 @@
-// src/components/WatchCard.tsx
 'use client';
 
 import React, { useState } from 'react';
@@ -13,6 +12,7 @@ interface WatchCardProps {
 
 const WatchCard: React.FC<WatchCardProps> = ({ watch }) => {
   const [isLiked, setIsLiked] = useState(false);
+  const [showToast, setShowToast] = useState(false);  // NEW: toast state
   const { addToCart } = useCart();
 
   const handleLike = () => {
@@ -21,10 +21,12 @@ const WatchCard: React.FC<WatchCardProps> = ({ watch }) => {
 
   const handleAddToCart = () => {
     addToCart(watch);
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 3000);  // hide toast after 3s
   };
 
   return (
-    <div className="bg-[#ffffff] rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
+    <div className="relative bg-[#ffffff] rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
       <div className="relative">
         <Image
           src={watch.image}
@@ -69,6 +71,13 @@ const WatchCard: React.FC<WatchCardProps> = ({ watch }) => {
           </button>
         </div>
       </div>
+
+      {/* NEW: Toast Notification */}
+      {showToast && (
+        <div className="absolute top-4 left-4 bg-green-600 text-white px-3 py-2 rounded-lg shadow-lg text-sm animate-fade-in-out">
+          {watch.name} added to cart!
+        </div>
+      )}
     </div>
   );
 };

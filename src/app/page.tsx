@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
 
       {/* Decorative Elements */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="w-1 h-16 bg-white opacity-50 rounded-full animate-pulse"></div>
+        <div className="w-1 h-16 bg-black opacity-50 rounded-full animate-pulse"></div>
       </div>
     </div>
   );

@@ -27,8 +27,8 @@ export default function RootLayout({
             </main>
           </CartProvider>
         </WishlistProvider>
-        <footer className="bg-gray-800 text-white py-4 text-center">
-          <p>&copy; {new Date().getFullYear()} Di VITTORIO & Elena Jewelers. All rights reserved.</p>
+        <footer className="bg-[#2a2e2b] text-white py-4 text-center">
+          <p>&copy; {new Date().getFullYear()} Di VITTORIO & Elena Jewelers.</p>
         </footer>
       </body>
     </html>

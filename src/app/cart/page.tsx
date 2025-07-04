@@ -5,6 +5,7 @@ import React from 'react';
 import Image from 'next/image';
 import { useCart } from '@/context/CartContext';
 import { Minus, Plus, X } from 'lucide-react';
+import Link from 'next/link';
 
 const CartPage: React.FC = () => {
   const { cartItems, updateQuantity, removeFromCart, getTotalPrice, clearCart } = useCart();
@@ -28,12 +29,12 @@ const CartPage: React.FC = () => {
                 <p className="font-open-sans text-jet-600 mb-8">
                   Looks like you haven&apos;t added any items to your cart yet.
                 </p>
-                <a
+                <Link
                   href="/shop"
                   className="inline-block bg-[#3c6e71] hover:bg-black text-white font-cormorant text-lg font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
                 >
                   Continue Shopping
-                </a>
+                </Link>
               </div>
             </div>
           </div>

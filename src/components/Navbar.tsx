@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
   const totalItems = getTotalItems();
 
   return (
-    <nav className="bg-[#0b5633] shadow-lg h-24 w-auto ">
+    <nav className="bg-[#0b5633] shadow-lg h-24 sticky top-0 w-full z-50">
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo and Title */}

@@ -26,3 +26,9 @@ export interface ContactFormData {
   email: string;
   feedback: string;
 }
+
+export interface WishlistContextType {
+  wishlistItems: Watch[];
+  addToWishlist: (watch: Watch) => void;
+  removeFromWishlist: (id: number) => void;
+}

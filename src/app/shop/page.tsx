@@ -5,7 +5,7 @@ import { watches } from '@/data/watches';
 
 const ShopPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#454b4b] py-12">
+    <div className="min-h-screen bg-[#0b472b] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
