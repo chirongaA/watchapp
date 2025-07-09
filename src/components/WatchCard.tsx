@@ -20,6 +20,9 @@ const WatchCard: React.FC<WatchCardProps> = ({ watch }) => {
   };
 
   const handleAddToCart = () => {
+
+    localStorage.setItem("watchData", JSON.stringify(watch))
+
     addToCart(watch);
     setShowToast(true);
     setTimeout(() => setShowToast(false), 3000);  // hide toast after 3s

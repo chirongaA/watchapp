@@ -1,10 +1,11 @@
 // src/app/layout.tsx
+
 import type { Metadata } from 'next';
 import { CartProvider } from '@/context/CartContext';
 import Navbar from '@/components/Navbar';
 import { WishlistProvider } from '@/context/WishlistContext';
 import './globals.css';
-
+import { ReduxProvider } from "./ReduxComponent"
 
 export const metadata: Metadata = {
   title: 'Di VITTORIO & Elena Jewelers',
@@ -23,7 +24,9 @@ export default function RootLayout({
           <CartProvider>
             <Navbar />
             <main className="flex-1">
+              <ReduxProvider>
               {children}
+              </ReduxProvider>
             </main>
           </CartProvider>
         </WishlistProvider>
