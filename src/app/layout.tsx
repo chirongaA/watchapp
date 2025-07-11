@@ -5,6 +5,7 @@ import { CartProvider } from '@/context/CartContext';
 import Navbar from '@/components/Navbar';
 import { WishlistProvider } from '@/context/WishlistContext';
 import './globals.css';
+import { Toaster } from 'react-hot-toast';
 import { ReduxProvider } from "./ReduxComponent"
 
 export const metadata: Metadata = {
@@ -20,16 +21,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#d9d9d9]-900 min-h-screen">
-        <WishlistProvider>
-          <CartProvider>
-            <Navbar />
-            <main className="flex-1">
-              <ReduxProvider>
-              {children}
-              </ReduxProvider>
-            </main>
-          </CartProvider>
-        </WishlistProvider>
+        <Toaster position="bottom-right" />
+          <WishlistProvider>
+            <CartProvider>
+              <Navbar />
+              <main className="flex-1">
+                <ReduxProvider>
+                {children}
+                </ReduxProvider>
+              </main>
+            </CartProvider>
+          </WishlistProvider>
         <footer className="bg-[#2a2e2b] text-white py-4 text-center">
           <p>&copy; {new Date().getFullYear()} Di VITTORIO & Elena Jewelers.</p>
         </footer>

@@ -16,14 +16,14 @@ const ShopPage: React.FC = () => {
             Explore our curated selection of luxury timepieces, each piece representing the pinnacle of craftsmanship and design.
           </p>
         </div>
-
+      
         {/* Watch Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {watches.map((watch) => (
             <WatchCard key={watch.id} watch={watch} />
           ))}
         </div>
-
+        
         {/* Additional Info */}
         <div className="mt-16 text-center">
           <div className="bg-[#d0f0de] rounded-lg shadow-lg p-8 max-w-4xl mx-auto">

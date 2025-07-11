@@ -1,8 +1,9 @@
 "use client"
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import video from 'next/image';
+// import Image from 'next/image';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const HomePage: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const HomePage: React.FC = () => {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="/images/vid_4.mp4" type="video/mp4" />
+          <source src="/images/vid_1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-background/20 backdrop-md"/> 
