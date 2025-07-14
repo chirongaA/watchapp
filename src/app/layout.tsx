@@ -32,7 +32,7 @@ export default function RootLayout({
               </main>
             </CartProvider>
           </WishlistProvider>
-        <footer className="bg-[#2a2e2b] text-white py-4 text-center">
+        <footer className="bg-[#1a1b1a] text-white py-4 text-center">
           <p>&copy; {new Date().getFullYear()} Di VITTORIO & Elena Jewelers.</p>
         </footer>
       </body>

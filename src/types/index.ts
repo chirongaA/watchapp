@@ -32,3 +32,11 @@ export interface WishlistContextType {
   addToWishlist: (watch: Watch) => void;
   removeFromWishlist: (id: number) => void;
 }
+
+export interface CheckoutFormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  address: string;
+}
