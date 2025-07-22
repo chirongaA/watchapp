@@ -1,6 +1,7 @@
-Welcome to Di Vittorio and Elena Jewelers!!😍
-Back in June 2025, I set out ot learn something new!! A new framework.To be more specific, Next.js.
-I must say the journey has been nothing short of wonderful. From the extensive documentation to building an application from scratch. It's been fun, it's been different, it's been definitely a good learning experience.
+#### Welcome to Di Vittorio and Elena Jewelers!!😍
+- Back in June 2025, I set out ot learn something new!! A new framework.To be more specific, Next.js.
+- I must say the journey has been nothing short of wonderful. From the extensive documentation to building an application from scratch.
+- It's been fun, it's been different, it's been definitely a good learning experience.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
