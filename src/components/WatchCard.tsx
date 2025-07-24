@@ -6,6 +6,7 @@ import { Heart, ShoppingCart, Trash2 } from 'lucide-react';
 import { Watch } from '@/types';
 import { useCart } from '@/context/CartContext';
 import toast from 'react-hot-toast'; 
+//import ImageModal from "@/components/ImageModal"; // adjust path if needed
 
 
 interface WatchCardProps {
@@ -15,11 +16,8 @@ interface WatchCardProps {
 const WatchCard: React.FC<WatchCardProps> = ({ watch }) => {
   const [isLiked, setIsLiked] = useState(false);
   const { addToCart, removeFromCart, cartItems } = useCart();
-
   const isInCart = cartItems.some(item => item.id === watch.id); //checks cart status
-
   const handleLike = () => setIsLiked(!isLiked);
-
   const handleAddToCart = () => {
     addToCart(watch);
     toast.success(`${watch.name} added to cart.`, {

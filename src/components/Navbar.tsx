@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
             
             {/* Cart Icon */}
             <Link href="/cart" className="relative">
-              <ShoppingCart className="h-6 w-6 text-jet-500 hover:text-white transition-colors duration-200" />
+              <ShoppingCart className="h-6 w-6 text-white hover:text-black transition-colors duration-200" />
               {totalItems > 0 && (
                 <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
                   {totalItems}

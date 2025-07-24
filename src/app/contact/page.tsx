@@ -50,7 +50,7 @@ const ContactPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="bg-[#ffffff] rounded-lg shadow-lg p-8">
-            <h2 className="font-cormorant text-3xl font-bold text-jet-500 mb-8">
+            <h2 className="font-cormorant text-3xl  flex justify-center font-bold text-jet-500 mb-8">
               Get in Touch
             </h2>
             
@@ -134,7 +134,7 @@ const ContactPage: React.FC = () => {
 
           {/* Feedback Form */}
           <div className="bg-white rounded-lg shadow-lg p-8">
-            <h2 className="font-cormorant text-3xl font-bold text-shadow-black mb-8">
+            <h2 className="font-cormorant text-3xl font-bold text-shadow-black flex justify-center mb-8">
               Send us a Message
             </h2>
 
@@ -225,7 +225,7 @@ const ContactPage: React.FC = () => {
             Experience our luxury timepieces in person at our flagship showroom in the heart of Nairobi. Our expert consultants are available to help you find the perfect watch for any occasion!
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-[#bbe2d0] shadow-lg p-6 hover:shadow-2xl transition-shadow duration-700 animate-pulse">
+            <div className="bg-[#bbe2d0] shadow-lg p-6 hover:shadow-gray-950 transition-shadow">
               <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                 Expert Consultation
               </h3>
@@ -233,7 +233,7 @@ const ContactPage: React.FC = () => {
                 Personalized service from certified watch specialists.
               </p>
             </div>
-            <div className="bg-[#bbe2d0] shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate-pulse">
+            <div className="bg-[#bbe2d0] shadow-lg p-6 hover:shadow-gray-950 transition-shadow ">
               <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                 Repair Services
               </h3>
@@ -241,7 +241,7 @@ const ContactPage: React.FC = () => {
                 Professional maintenance and repair for all luxury brands.
               </p>
             </div>
-            <div className="bg-[#bbe2d0] shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 animate-pulse">
+            <div className="bg-[#bbe2d0] shadow-lg p-6 hover:shadow-gray-950 transition-shadow ">
               <h3 className="font-cormorant text-xl font-semibold text-jet-500 mb-2">
                 Custom Orders
               </h3>

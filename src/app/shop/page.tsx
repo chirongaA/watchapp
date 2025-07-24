@@ -26,7 +26,7 @@ const ShopPage: React.FC = () => {
         
         {/* Additional Info */}
         <div className="mt-16 text-center">
-          <div className="bg-[#d0f0de] rounded-lg shadow-lg p-8 max-w-4xl mx-auto">
+          <div className="bg-[#d0f0de] rounded-lg shadow-lg hover:shadow-gray-950 p-8 max-w-4xl mx-auto">
             <h2 className="font-cormorant text-3xl font-bold text-jet-500 mb-4">
               Why Choose Di VITTORIO & Elena?
             </h2>

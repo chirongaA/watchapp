@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react';
 import { useCart } from '@/context/CartContext';
-import { useRouter } from 'next/navigation';
+//import { useRouter } from 'next/navigation';
 
 const CheckoutPage: React.FC = () => {
   const { cartItems, getTotalPrice } = useCart();
-  const router = useRouter();
+  //const router = useRouter();
 
   const [formData, setFormData] = useState({
     firstName: '',
